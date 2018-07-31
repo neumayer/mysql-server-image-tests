@@ -1,0 +1,22 @@
+file:
+  /usr/sbin/mysqld:
+    exists: true
+    contains: []
+package:
+  mysql-community-server-minimal:
+    installed: true
+  mysql-shell:
+    installed: true
+port:
+  tcp6:3306:
+    listening: true
+    ip: []
+  tcp6:33060:
+    listening: true
+    ip: []
+user:
+  mysql:
+    exists: true
+process:
+  mysqld:
+    running: true
